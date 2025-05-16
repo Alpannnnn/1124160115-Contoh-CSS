@@ -9,8 +9,8 @@
      /* ### BOX MODEL ### */
     .box-model {
       width: 200px; /* Lebar konten */
-      padding: 20px; /* Ruang dalam elemen */
-      border: 5px solid #333; /* Garis tepi */
+      padding: 50px; /* Ruang dalam elemen */
+      border: 2px solid #ed1313; /* Garis tepi */
       margin: 20px; /* Jarak luar antar elemen */
       background-color: #f0f0f0; /* Warna latar */
     }
@@ -18,7 +18,7 @@
     .positioning-container {
     position: relative; /* Referensi untuk elemen yang posisinya absolut */
     height: 200px;
-    border: 1px solid #aaa;
+    border: 5px solid #aaa;
     }
 
     .positioned-box {
@@ -85,7 +85,18 @@
     color: white;
     }
 
-    
+        /* ### TRANSFORMASI DAN ANIMASI ### */
+    .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin: 20px auto;
+    transition: transform 0.5s; /* Animasi perubahan transform */
+    }
+
+    .animated-box:hover {
+      transform: rotate(15deg) scale(1.2); /* Efek rotasi dan perbesaran saat hover */
+    }
 </style>
 <body>
     <h1>Contoh Materi CSS Lengkap</h1>
